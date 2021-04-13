@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".inicioSesion"
+    android:background="@drawable/app002">
+
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/grupo109"
+        android:layout_marginTop="200dp"
+        />
+
+    <Button
+        android:id="@+id/btnRegistrarse"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="70dp"
+        android:text="Registrate"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:id="@+id/btnIniciarSesion"
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="30dp"
+        android:text="Inicia sesion"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"/>
+
+
+</LinearLayout>
