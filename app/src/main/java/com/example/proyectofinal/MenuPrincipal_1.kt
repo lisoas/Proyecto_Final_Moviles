@@ -1,6 +1,9 @@
 package com.example.proyectofinal
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.ImageButton
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -25,5 +28,14 @@ class MenuPrincipal_1 : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        val button: ImageButton = findViewById(R.id.btnMeet) as ImageButton
+        button.setOnClickListener{
+            var intent: Intent = Intent(this, MenuPrincipalMeet::class.java)
+            startActivity(intent)
+        }
+
     }
+
+
 }

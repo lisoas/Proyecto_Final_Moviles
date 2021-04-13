@@ -63,7 +63,7 @@
         tools:layout_editor_absoluteY="258dp" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/btnMeet"
         android:layout_width="427dp"
         android:layout_height="204dp"
         app:srcCompat="@drawable/meet"

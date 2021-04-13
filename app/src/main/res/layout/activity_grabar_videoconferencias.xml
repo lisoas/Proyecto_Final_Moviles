@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".grabarVideoconferencias"
+    android:background="@drawable/app007"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-80dp"
+        android:layout_marginLeft="85dp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/black"
+        android:text="¿Como grabar tus videoconferencias?" />
+
+    <ImageView
+        android:layout_width="315dp"
+        android:layout_height="143dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="-270dp"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@drawable/imagen7" />
+
+    <ImageButton
+        android:id="@+id/btnRegresarMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/next2"
+        android:background="@drawable/style_border_edit"
+        android:layout_marginLeft="-350dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="470dp"
+        android:layout_marginLeft="-60dp"
+        android:src="@drawable/textocomograbarvideollamada" />
+
+
+</LinearLayout>

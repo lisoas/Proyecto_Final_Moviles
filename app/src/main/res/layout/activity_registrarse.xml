@@ -17,7 +17,6 @@
         app:srcCompat="@drawable/grupo109"
         />
 
-
     <ImageButton
         android:id="@+id/opcionMujer"
         android:layout_width="104dp"
@@ -110,7 +109,7 @@
         />
 
     <Button
-        android:id="@+id/iniciar"
+        android:id="@+id/iniciar2"
         android:layout_width="307dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
@@ -130,8 +129,5 @@
         android:layout_marginLeft="60dp"
         android:textColor="@color/black"
         android:textSize="18dp" />
-
-
-
 
 </LinearLayout>

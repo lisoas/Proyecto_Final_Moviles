@@ -3,9 +3,9 @@ package com.example.proyectofinal
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class MenuPrincipal : AppCompatActivity() {
+class grabarVideoconferencias : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_menu_principal)
+        setContentView(R.layout.activity_grabar_videoconferencias)
     }
 }

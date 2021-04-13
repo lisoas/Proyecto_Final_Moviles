@@ -5,15 +5,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class registrarse : AppCompatActivity() {
+class MenuPrincipalMeet : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_registrarse)
+        setContentView(R.layout.activity_menu_principal_meet)
 
-        val button: Button = findViewById(R.id.iniciar2) as Button
-
+        val button: Button = findViewById(R.id.btnRegistrarse) as Button
         button.setOnClickListener{
-            var intent: Intent = Intent(this, MenuPrincipal_1::class.java)
+            var intent: Intent = Intent(this, grabarVideoconferencias::class.java)
             startActivity(intent)
         }
 
