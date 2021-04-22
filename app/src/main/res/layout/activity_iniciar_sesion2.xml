@@ -10,88 +10,105 @@
     >
 
     <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="143dp"
-        android:layout_height="139dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="80dp"
-        app:srcCompat="@drawable/grupo109" />
+        app:srcCompat="@drawable/trazado5" />
 
-    <TextView
-        android:id="@+id/nombre"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Nombre"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/black"
-        android:textSize="30dp"
-        android:fontFamily="sans-serif-light"
-        />
-    <TextView
-        android:id="@+id/campoNombre"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/black"
-        android:textSize="30dp"
-        android:fontFamily="sans-serif-light"
-        android:background="@drawable/style_border_edit"
+    <LinearLayout
+        android:layout_width="356dp"
+        android:layout_height="501dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/cuadro">
 
-        />
-    <TextView
-        android:id="@+id/contrasenia"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Contraseña"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="15dp"
-        android:textColor="@color/black"
-        android:textSize="30dp"
-        android:fontFamily="sans-serif-light"
-        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Nombre"
+            android:textColor="@color/black"
+            android:textIsSelectable="false"
+            android:textSize="15dp"
 
-    <EditText
-        android:id="@+id/campoContrasenia"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="50dp"
-        android:ems="10"
-        android:fontFamily="sans-serif-light"
-        android:inputType="textPassword"
-        android:textColor="@color/black"
-        android:textSize="30dp"
-        android:background="@drawable/style_border_edit"
+            />
+        <!---Campo para ingresar el nombre -->
 
-        />
+        <EditText
+            android:id="@+id/campoNombre"
+            android:layout_width="261dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-65dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/borderbuttonblue"
+            android:drawableLeft="@drawable/iconopersona"
+            android:fontFamily="@font/poppinslight"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="30dp" />
 
-    <TextView
-        android:id="@+id/se_te_olvido"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="¿Se te olvidó la contraseña?"
-        android:layout_marginLeft="60dp"
-        android:textColor="@color/black"
-        android:textSize="18dp"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-310dp"
+            android:layout_marginTop="150dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Contraseña"
+            android:textColor="@color/black"
+            android:textIsSelectable="false"
+            android:textSize="15dp" />
 
-        />
+        <!---Campo para ingresar la contrasenia -->
+        <EditText
+            android:id="@+id/campoContrasenia"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-95dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/borderbuttonblue"
+            android:drawableLeft="@drawable/login1"
+            android:fontFamily="@font/poppinslight"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
 
-    <Button
-        android:id="@+id/iniciar"
-        android:layout_width="307dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/style_border_edit"
-        android:backgroundTint="@color/white"
-        android:fontFamily="sans-serif-light"
-        android:text="Iniciar sesion"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="@color/black" />
+        <Button
+            android:id="@+id/se_te_olvido"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginLeft="-305dp"
+            android:layout_marginTop="240dp"
+            android:background="@color/white"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="¿Se te olvidó la contraseña?"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            app:cornerRadius="20dp"
+            app:strokeColor="@color/white" />
+
+        <Button
+            android:id="@+id/iniciar"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="243dp"
+            android:layout_height="59dp"
+            android:layout_marginLeft="-240dp"
+            android:layout_marginTop="350dp"
+            android:background="@drawable/borderbuttonblue"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Iniciar sesion"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            app:cornerRadius="20dp"
+            app:strokeColor="@color/blue" />
+
+    </LinearLayout>
 
 </LinearLayout>

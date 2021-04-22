@@ -10,124 +10,152 @@
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="105dp"
-        android:layout_height="92dp"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
-        app:srcCompat="@drawable/grupo109"
-        />
+        app:srcCompat="@drawable/trazado5" />
+    <!--- Layout que abarca todo el formulario -->
+    <LinearLayout
+        android:layout_width="363dp"
+        android:layout_height="512dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/cuadro"
+        >
 
-    <ImageButton
-        android:id="@+id/opcionMujer"
-        android:layout_width="104dp"
-        android:layout_height="56dp"
-        android:background="@drawable/style_border_edit"
-        app:srcCompat="@drawable/grupo122"
-        android:layout_gravity="center"/>
+        <!--- layout para las opciones  -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="10dp"
 
-    <ImageButton
-        android:id="@+id/opcionHombre"
-        android:layout_width="104dp"
-        android:layout_height="61dp"
-        android:background="@drawable/style_border_edit"
-        app:srcCompat="@drawable/grupo123"
-        android:layout_gravity="center"/>
+            >
 
-    <TextView
-        android:id="@+id/nombre"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Nombre"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/black"
-        android:textSize="30dp"
-        android:fontFamily="sans-serif-light"
-        />
-    <TextView
-        android:id="@+id/campoNombre"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/black"
-        android:textSize="30dp"
-        android:fontFamily="sans-serif-light"
-        android:background="@drawable/style_border_edit"
+            <ImageButton
+                android:id="@+id/opcionMujer"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:background="@drawable/style_border_edit"
+                app:srcCompat="@drawable/grupo122" />
 
-        />
-    <TextView
-        android:id="@+id/contrasenia"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Contraseña"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="15dp"
-        android:textColor="@color/black"
-        android:textSize="30dp"
-        android:fontFamily="sans-serif-light"
-        />
+            <ImageButton
+                android:id="@+id/opcionHombre"
+                android:layout_width="wrap_content"
+                android:layout_height="61dp"
+                android:layout_gravity="center"
+                android:background="@drawable/style_border_edit"
+                app:srcCompat="@drawable/grupo123" />
 
-    <EditText
-        android:id="@+id/campoContrasenia"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="50dp"
-        android:ems="10"
-        android:fontFamily="sans-serif-light"
-        android:inputType="textPassword"
-        android:textColor="@color/black"
-        android:textSize="30dp"
-        android:background="@drawable/style_border_edit"
+        </LinearLayout>
 
-        />
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Correo"
-        android:fontFamily="sans-serif-light"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="15dp"
-        android:textColor="@color/black"
-        android:textSize="30dp"
-        />
 
-    <EditText
-        android:id="@+id/campoCorreo"
-        android:layout_width="307dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:background="@drawable/style_border_edit"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:textSize="30dp"
-        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-165dp"
+            android:layout_marginTop="70dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Nombre"
+            android:textColor="@color/black"
+            android:textIsSelectable="false"
+            android:textSize="15dp" />
 
-    <Button
-        android:id="@+id/iniciar2"
-        android:layout_width="307dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/style_border_edit"
-        android:backgroundTint="@color/white"
-        android:fontFamily="sans-serif-light"
-        android:text="Registrarse"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="@color/black" />
+        <EditText
+            android:id="@+id/campoNombre"
+            android:layout_width="255dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="-70dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/borderbuttonblue"
+            android:drawableLeft="@drawable/iconopersona"
+            android:fontFamily="@font/poppinslight"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="30dp" />
 
-    <TextView
-        android:id="@+id/se_te_olvido"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Al registrarse seras parte del equipo ihu!"
-        android:layout_marginLeft="60dp"
-        android:textColor="@color/black"
-        android:textSize="18dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-255dp"
+            android:layout_marginTop="160dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Contraseña"
+            android:textColor="@color/black"
+            android:textIsSelectable="false"
+            android:textSize="15dp" />
 
+        <EditText
+            android:id="@+id/campoContrasenia"
+            android:layout_width="262dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="-95dp"
+            android:layout_marginTop="210dp"
+            android:background="@drawable/borderbuttonblue"
+            android:drawableLeft="@drawable/login1"
+            android:fontFamily="@font/poppinslight"
+            android:inputType="textPassword"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="30dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-260dp"
+            android:layout_marginTop="250dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Correo"
+            android:textColor="@color/black"
+            android:textIsSelectable="false"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/campoCorreo"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-50dp"
+            android:layout_marginTop="300dp"
+            android:background="@drawable/borderbuttonblue"
+            android:drawableLeft="@drawable/email"
+            android:inputType="textEmailAddress"
+            android:textSize="30dp"
+
+            />
+
+        <Button
+            android:id="@+id/iniciar2"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="308dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="-288dp"
+            android:layout_marginTop="380dp"
+            android:background="@drawable/borderbuttonblue"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Registrarse"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            app:cornerRadius="20dp"
+            app:strokeColor="@color/blue" />
+
+        <TextView
+            android:layout_width="284dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-295dp"
+            android:layout_marginTop="430dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="Al registrarse seras parte del equipo ihu!"
+            android:textColor="@color/black"
+            android:textIsSelectable="false"
+            android:textSize="15dp"
+
+            />
+
+    </LinearLayout>
 </LinearLayout>

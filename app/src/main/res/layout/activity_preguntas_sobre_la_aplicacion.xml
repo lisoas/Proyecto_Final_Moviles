@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reportarFallas"
+    android:orientation="vertical"
+    android:background="@drawable/fondo2"
+    >
+
+
+    <ImageButton
+        android:id="@+id/volver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/next2"
+        android:background="@null"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <TextView
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Preguntas sobre la aplicación"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Qué o quien es ihui!?"
+        android:fontFamily="@font/poppinsbold"
+        android:textSize="20dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="120dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="349dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="20dp"
+        android:text="ihu! es un asistente virtual que te ayuda a conocer las herramientas que poseen Zoom, Teams y Meet."
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinslight"
+        />
+    <TextView
+        android:layout_width="349dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="20dp"
+        android:text="Fue creado para ayudar a mejorar el conocimiento sobre las plataformas de videoconferencias."
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinslight"
+        />
+
+    <TextView
+        android:layout_width="349dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="20dp"
+        android:text="ihu! es tu guia y maestro que te resolvera tus dudas."
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinslight"
+        />
+
+</LinearLayout>

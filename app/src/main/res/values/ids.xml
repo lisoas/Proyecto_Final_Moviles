@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="perfilicono" type="id" />
+    <item name="fallaicono" type="id" />
+    <item name="editarIcono" type="id" />
+    <item name="preguntasIcono" type="id" />
+    <item name="cerrarSesionIcono" type="id" />
+    <item name="perfilTexto" type="id" />
+    <item name="reportarFalla" type="id" />
+    <item name="reportarFallaTexto" type="id" />
+    <item name="reportarIcono" type="id" />
+    <item name="retroalimentaciónTexto" type="id" />
+    <item name="cerrarSesionTexto" type="id" />
+    <item name="preguntasTexto" type="id" />
+    <item name="btnReportarFallas" type="id" />
+    <item name="btnPerfil" type="id" />
+    <item name="btnCerrarSesion" type="id" />
+    <item name="btnPreguntas" type="id" />
+    <item name="btnRetro" type="id" />
+</resources>

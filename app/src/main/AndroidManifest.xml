@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoFinal">
-        <activity android:name=".grabarVideoconferencias"></activity>
+        <activity android:name=".preguntasSobreLaAplicacion"></activity>
+        <activity android:name=".retroalimentacion" />
+        <activity android:name=".reportarFallas" />
+        <activity android:name=".Perfil" />
+        <activity android:name=".MenuAjustes" />
+        <activity android:name=".grabarVideoconferencias" />
         <activity
             android:name=".MenuPrincipal_1"
             android:label="@string/title_activity_menu_principal_1" />

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuAjustes"
+    android:orientation="vertical"
+    android:background="@drawable/app003"
+    >
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="145dp"
+        android:layout_height="148dp"
+        app:srcCompat="@drawable/grupo323"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="140dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Ajustes"
+        android:textIsSelectable="false"
+        android:textColor="@color/black"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:textSize="25dp" />
+
+
+    <ImageView
+        android:id="@+id/perfilicono"
+        android:layout_width="49dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/user2"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageButton
+        android:id="@+id/btnPerfil"
+        android:layout_width="59dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/flechita"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="-40dp"
+        android:background="@drawable/style_border_edit"
+        />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perfil"
+        android:fontFamily="@font/poppinslight"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="-30dp"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+    />
+
+    <ImageView
+        android:id="@+id/fallaicono"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/documento1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageButton
+        android:id="@+id/btnReportarFallas"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="-40dp"
+        android:background="@drawable/style_border_edit"
+        app:srcCompat="@drawable/flechita" />
+
+    <TextView
+        android:id="@+id/reportarFallaTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reportar falla tecnica"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="-30dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinslight"
+        android:textSize="15dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/reportarIcono"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/editar1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"/>
+
+    <ImageButton
+        android:id="@+id/btnRetro"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="-40dp"
+        android:background="@drawable/style_border_edit"
+        app:srcCompat="@drawable/flechita" />
+
+    <TextView
+        android:id="@+id/retroalimentaciónTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar retroalimentación"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="-30dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinslight"
+        android:textSize="15dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/preguntasIcono"
+        android:layout_width="51dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/icoutlinequestionanswer"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageButton
+        android:id="@+id/btnPreguntas"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="-40dp"
+        android:background="@drawable/style_border_edit"
+        app:srcCompat="@drawable/flechita" />
+
+    <TextView
+        android:id="@+id/preguntasTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preguntas sobre la aplicación"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="-30dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinslight"
+        android:textSize="15dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/cerrarSesionIcono"
+        android:layout_width="53dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cerrarsesion"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"/>
+
+    <ImageButton
+        android:id="@+id/btnCerrarSesion"
+        android:layout_width="61dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="-40dp"
+        android:background="@drawable/style_border_edit"
+        app:srcCompat="@drawable/flechita" />
+
+    <TextView
+        android:id="@+id/cerrarSesionTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cerrar sesión"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="-30dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinslight"
+        android:textSize="15dp"
+        />
+
+    
+
+
+</LinearLayout>
