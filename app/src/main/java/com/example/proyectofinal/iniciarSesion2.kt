@@ -7,10 +7,14 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
+
 
 class iniciarSesion2 : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_iniciar_sesion2)
@@ -32,14 +36,16 @@ class iniciarSesion2 : AppCompatActivity() {
     }
 
     private fun valida_ingreso(){
-        val et_correo: EditText = findViewById(R.id.campoNombre)
+        val et_nombre: EditText = findViewById(R.id.campoNombre)
         val et_contra: EditText = findViewById(R.id.campoContrasenia)
+        val et_correo:EditText= findViewById(R.id.campoCorreo)
 
-        var correo: String = et_correo.text.toString()
+        var nombre: String = et_nombre.text.toString()
         var contra: String = et_contra.text.toString()
+        var correo:String = et_correo.text.toString()
 
-        if(!correo.isNullOrBlank() && !contra.isNullOrBlank()){
-            ingresarFirebase(correo, contra)
+        if(!nombre.isNullOrBlank() && !contra.isNullOrBlank()){
+            ingresarFirebase(correo, contra, nombre)
         }else{
             Toast.makeText(this, "Ingresar datos",
                 Toast.LENGTH_SHORT).show()
@@ -47,15 +53,16 @@ class iniciarSesion2 : AppCompatActivity() {
 
     }
 
-    private fun ingresarFirebase(correo: String, contra: String){
+    private fun ingresarFirebase(correo: String, contra: String, nombre: String){
         auth.signInWithEmailAndPassword(correo, contra)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     // Sign in success, update UI with the signed-in user's information
 
                     val user = auth.currentUser
-                    val intent:  Intent = Intent(this, MainActivity::class.java)
+                    val intent:  Intent = Intent(this, MenuPrincipal_1::class.java)
                     startActivity(intent)
+                    finish()
 
                 } else {
                     // If sign in fails, display a message to the user.

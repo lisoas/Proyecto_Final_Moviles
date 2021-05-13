@@ -16,9 +16,9 @@ class MenuPrincipal_1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_principal_1)
-        val navView: BottomNavigationView = findViewById(R.id.nav_view)
+        //val navView: BottomNavigationView = findViewById(R.id.nav_view)
 
-        val navController = findNavController(R.id.nav_host_fragment)
+        //val navController = findNavController(R.id.nav_host_fragment)
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         val appBarConfiguration = AppBarConfiguration(
@@ -26,14 +26,14 @@ class MenuPrincipal_1 : AppCompatActivity() {
                 R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications
             )
         )
-        setupActionBarWithNavController(navController, appBarConfiguration)
-        navView.setupWithNavController(navController)
+        //setupActionBarWithNavController(navController, appBarConfiguration)
+        //navView.setupWithNavController(navController)
 
-        val button: ImageButton = findViewById(R.id.btnMeet) as ImageButton
+        /*val button: ImageButton = findViewById(R.id.btnMeet) as ImageButton
         button.setOnClickListener{
             var intent: Intent = Intent(this, MenuPrincipalMeet::class.java)
             startActivity(intent)
-        }
+        }*/
 
     }
 
