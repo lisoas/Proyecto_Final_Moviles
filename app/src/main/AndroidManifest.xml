@@ -8,22 +8,26 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ProyectoFinal">
-        <activity android:name=".preguntasSobreLaAplicacion"></activity>
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".comoEmpiezoUtilizarMeet"></activity>
+        <activity android:name=".Examen1" />
+
+        <activity android:name=".comoprogramarunaVideollamada" />
+
+        <activity android:name=".comoSeUtilizaMeetParaHacerUnaVideollamada" />
+        <activity android:name=".preguntasSobreLaAplicacion" />
         <activity android:name=".retroalimentacion" />
         <activity android:name=".reportarFallas" />
         <activity android:name=".Perfil" />
-        <activity android:name=".MenuAjustes" />
+
         <activity android:name=".grabarVideoconferencias" />
         <activity
             android:name=".MenuPrincipal_1"
             android:label="@string/title_activity_menu_principal_1" />
-        <activity android:name=".MenuPrincipalMeet" />
+
         <activity android:name=".registrarse" />
         <activity android:name=".iniciarSesion2" />
-        <activity android:name=".inicioSesion" />
         <activity android:name=".pantalladecarga" />
-        <activity android:name=".PantalladeCarga" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

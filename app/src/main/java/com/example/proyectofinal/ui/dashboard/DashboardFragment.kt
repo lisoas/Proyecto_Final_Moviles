@@ -11,7 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.proyectofinal.R
 
 class DashboardFragment : Fragment() {
-
+/*
     private lateinit var dashboardViewModel: DashboardViewModel
 
     override fun onCreateView(
@@ -27,5 +27,5 @@ class DashboardFragment : Fragment() {
             textView.text = it
         })
         return root
-    }
+    }*/
 }

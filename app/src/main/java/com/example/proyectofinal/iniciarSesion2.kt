@@ -18,7 +18,7 @@ class iniciarSesion2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_iniciar_sesion2)
-
+        supportActionBar?.hide()
         auth = Firebase.auth
 
        /* val button: Button = findViewById(R.id.iniciar) as Button*/
@@ -36,16 +36,14 @@ class iniciarSesion2 : AppCompatActivity() {
     }
 
     private fun valida_ingreso(){
-        val et_nombre: EditText = findViewById(R.id.campoNombre)
         val et_contra: EditText = findViewById(R.id.campoContrasenia)
         val et_correo:EditText= findViewById(R.id.campoCorreo)
 
-        var nombre: String = et_nombre.text.toString()
         var contra: String = et_contra.text.toString()
         var correo:String = et_correo.text.toString()
 
-        if(!nombre.isNullOrBlank() && !contra.isNullOrBlank()){
-            ingresarFirebase(correo, contra, nombre)
+        if(!correo.isNullOrBlank() && !contra.isNullOrBlank()){
+            ingresarFirebase(correo, contra)
         }else{
             Toast.makeText(this, "Ingresar datos",
                 Toast.LENGTH_SHORT).show()
@@ -53,7 +51,7 @@ class iniciarSesion2 : AppCompatActivity() {
 
     }
 
-    private fun ingresarFirebase(correo: String, contra: String, nombre: String){
+    private fun ingresarFirebase(correo: String, contra: String){
         auth.signInWithEmailAndPassword(correo, contra)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {

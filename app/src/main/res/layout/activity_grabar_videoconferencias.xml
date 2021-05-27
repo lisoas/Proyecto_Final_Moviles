@@ -1,47 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".grabarVideoconferencias"
-    android:background="@drawable/app007"
+    android:orientation="vertical"
+    android:background="@drawable/interseccion22"
     >
 
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="-80dp"
-        android:layout_marginLeft="85dp"
-        android:fontFamily="sans-serif-light"
-        android:textColor="@color/black"
-        android:text="¿Como grabar tus videoconferencias?" />
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="¿Cómo grabar tus videoconferencias?"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.265"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.126"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
+        android:id="@+id/imageView5"
         android:layout_width="315dp"
         android:layout_height="143dp"
         android:layout_gravity="center"
-        android:layout_marginLeft="-270dp"
-        android:layout_marginTop="25dp"
-        app:srcCompat="@drawable/imagen7" />
+        android:layout_marginTop="156dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.317"
+        app:srcCompat="@drawable/imagen7"
+        tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/btnRegresarMenu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/next2"
+        android:layout_width="55dp"
+        android:layout_height="51dp"
         android:background="@drawable/style_border_edit"
-        android:layout_marginLeft="-350dp"
-        android:layout_marginTop="10dp"
-        />
+        android:src="@drawable/next2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="470dp"
-        android:layout_marginLeft="-60dp"
-        android:src="@drawable/textocomograbarvideollamada" />
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="371dp"
+        android:layout_height="145dp"
+        android:fontFamily="@font/poppinslight"
+        android:text="Abrir Meet, luego presionar donde dice iniciar o Unirsea la reunión. Una vez que yase inicio el encuentro presionar en los tres puntos y elegir la opción 'Grabar la reunión'. Para finalizar hay que ingresar en ese mismo menu y elegir la opción 'detener'."
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.539"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="370dp"
+        android:layout_height="146dp"
+        android:fontFamily="@font/poppinslight"
+        android:text="El archivo con la grabación se guardara automaticamente en la carpeta Grabaciones del Meet del organizador, en Mi unidad y se enviara un correo electronico con un vinculo de la grabación al organizador de la reunión y a la persona que la haya grabado."
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="245dp"
+        android:layout_height="59dp"
+        android:background="@color/blue"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="623dp">
+
+        <ImageButton
+            android:id="@+id/examencomoprogramarunavideoconferencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/borderwhiteonlylines"
+            android:src="@drawable/iconoexamen" />
+    </LinearLayout>
 
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

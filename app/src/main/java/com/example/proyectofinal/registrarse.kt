@@ -10,10 +10,13 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
+import kotlinx.android.synthetic.main.activity_registrarse.*
 import java.lang.ref.PhantomReference
 
 class registrarse : AppCompatActivity() {
+    private val db = FirebaseFirestore.getInstance()
 
     private lateinit var auth: FirebaseAuth
 
@@ -23,6 +26,7 @@ class registrarse : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registrarse)
+        supportActionBar?.hide()
 
         auth = Firebase.auth
         database = FirebaseDatabase.getInstance()
@@ -32,6 +36,7 @@ class registrarse : AppCompatActivity() {
 
         btn_ingresar.setOnClickListener{
             valida_registro()
+
         }
     }
 
@@ -50,6 +55,13 @@ class registrarse : AppCompatActivity() {
                 registrarFirebase(correo, contra1, nombre1)
                 Toast.makeText(this, "Se ha registrado correctamente",
                     Toast.LENGTH_SHORT).show()
+                    db.collection("users").document(correo).set(
+                        hashMapOf("nombre" to campoNombre.text.toString(),
+                            "correo" to campoCorreo.text.toString())
+                    )
+                    var intent: Intent = Intent(this, iniciarSesion2::class.java)
+                    startActivity(intent)
+
 
             }else{
                 Toast.makeText(this, "la contraseña debe de tener minimo 6 caracteres",
@@ -76,7 +88,9 @@ class registrarse : AppCompatActivity() {
 
                     Toast.makeText(baseContext, "${currentUser.email} Se ha creado correctamente",
                         Toast.LENGTH_SHORT).show()
-                        finish()
+
+
+
 
                 } else {
 

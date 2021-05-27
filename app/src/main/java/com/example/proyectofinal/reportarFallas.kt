@@ -2,10 +2,38 @@ package com.example.proyectofinal
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.Button
+import android.widget.ImageButton
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
 
-class reportarFallas : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
+class reportarFallas : Fragment(R.layout.activity_reportar_fallas) {
+
+    override fun onCreate(savedInstanceState:Bundle?){
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_reportar_fallas)
+
+
+    }
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        var v = inflater.inflate(R.layout.activity_reportar_fallas, container, false)
+
+        val bt = v.findViewById<ImageButton>(R.id.volver)
+
+        bt.setOnClickListener{
+            val ajustesFragment = ajustesFragment()
+            val transaction: FragmentTransaction = requireFragmentManager().beginTransaction()
+            transaction.replace(R.id.container, ajustesFragment)
+            transaction.commit()
+        }
+
+
+        return v
     }
 }

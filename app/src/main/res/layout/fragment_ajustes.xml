@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ajustesFragment"
+    android:background="@drawable/app003">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="145dp"
+        android:layout_height="148dp"
+        android:layout_marginBottom="28dp"
+        android:src="@drawable/grupo323"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Ajustes"
+        android:textColor="@color/black"
+        android:textIsSelectable="false"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.345"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/perfilicono"
+        android:layout_width="55dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/borderbuttonblue"
+        app:layout_constraintBottom_toTopOf="@+id/fallaicono"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.806"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/user2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="48dp"
+        android:fontFamily="@font/poppinslight"
+        android:text="Perfil"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toStartOf="@+id/btnPerfil"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btnPerfil"
+        android:layout_width="59dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/style_border_edit"
+        app:layout_constraintBottom_toTopOf="@+id/btnReportarFallas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/flechita"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/fallaicono"
+        android:layout_width="56dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/borderbuttonblue"
+        app:layout_constraintBottom_toTopOf="@+id/reportarIcono"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/documento1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="48dp"
+        android:fontFamily="@font/poppinslight"
+        android:text="Reportar falla tecnica"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/retroalimentaciónTexto"
+        app:layout_constraintEnd_toStartOf="@+id/btnReportarFallas"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btnReportarFallas"
+        android:layout_width="59dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/style_border_edit"
+        app:layout_constraintBottom_toTopOf="@+id/btnRetro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/flechita"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/reportarIcono"
+        android:layout_width="56dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/borderbuttonblue"
+        app:layout_constraintBottom_toTopOf="@+id/preguntasIcono"
+        app:layout_constraintEnd_toStartOf="@+id/retroalimentaciónTexto"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/editar1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/retroalimentaciónTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="@font/poppinslight"
+        android:text="Enviar retroalimentación"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/preguntasTexto"
+        app:layout_constraintEnd_toStartOf="@+id/btnRetro"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btnRetro"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/style_border_edit"
+        app:layout_constraintBottom_toTopOf="@+id/btnPreguntas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/flechita"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/preguntasIcono"
+        android:layout_width="59dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/borderbuttonblue"
+        app:layout_constraintBottom_toTopOf="@+id/cerrarSesionIcono"
+        app:layout_constraintEnd_toStartOf="@+id/preguntasTexto"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/icoutlinequestionanswer"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/preguntasTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="52dp"
+        android:fontFamily="@font/poppinslight"
+        android:text="Preguntas sobre la aplicación"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/cerrarSesionTexto"
+        app:layout_constraintEnd_toStartOf="@+id/btnPreguntas"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btnPreguntas"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/style_border_edit"
+        app:layout_constraintBottom_toTopOf="@+id/btnCerrarSesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/flechita"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/cerrarSesionIcono"
+        android:layout_width="58dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/borderbuttonblue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cerrarSesionTexto"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/cerrarsesion"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/cerrarSesionTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="104dp"
+        android:fontFamily="@font/poppinslight"
+        android:text="Cerrar sesión"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCerrarSesion"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btnCerrarSesion"
+        android:layout_width="61dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/style_border_edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/flechita"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

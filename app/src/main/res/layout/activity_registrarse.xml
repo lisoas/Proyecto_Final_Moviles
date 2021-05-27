@@ -19,8 +19,8 @@
     <LinearLayout
         android:layout_width="363dp"
         android:layout_height="512dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="50px"
         android:background="@drawable/cuadro"
         >
 
@@ -33,21 +33,30 @@
 
             >
 
-            <ImageButton
-                android:id="@+id/opcionMujer"
-                android:layout_width="wrap_content"
-                android:layout_height="56dp"
-                android:layout_gravity="center"
-                android:background="@drawable/style_border_edit"
-                app:srcCompat="@drawable/grupo122" />
+            <RadioGroup
+                android:id="@+id/opciones"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/borderbuttonblue"
+                >
 
-            <ImageButton
-                android:id="@+id/opcionHombre"
-                android:layout_width="wrap_content"
-                android:layout_height="61dp"
-                android:layout_gravity="center"
-                android:background="@drawable/style_border_edit"
-                app:srcCompat="@drawable/grupo123" />
+                <RadioButton
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/grupo122"
+                    android:background="@drawable/circuloazul"
+                    />
+
+                <RadioButton
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+
+                    android:button="@drawable/grupo123" />
+
+            </RadioGroup>
+
+
 
         </LinearLayout>
 
@@ -65,8 +74,8 @@
 
         <EditText
             android:id="@+id/campoNombre"
-            android:layout_width="255dp"
-            android:layout_height="36dp"
+            android:layout_width="262dp"
+            android:layout_height="42dp"
             android:layout_marginLeft="-70dp"
             android:layout_marginTop="120dp"
             android:background="@drawable/borderbuttonblue"
@@ -74,7 +83,7 @@
             android:fontFamily="@font/poppinslight"
             android:text=""
             android:textColor="@color/black"
-            android:textSize="30dp" />
+            android:textSize="15dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -90,8 +99,8 @@
         <EditText
             android:id="@+id/campoContrasenia"
             android:layout_width="262dp"
-            android:layout_height="36dp"
-            android:layout_marginLeft="-95dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="-100dp"
             android:layout_marginTop="210dp"
             android:background="@drawable/borderbuttonblue"
             android:drawableLeft="@drawable/login1"
@@ -99,7 +108,7 @@
             android:inputType="textPassword"
             android:text=""
             android:textColor="@color/black"
-            android:textSize="30dp"
+            android:textSize="15dp"
 
             />
 
@@ -116,14 +125,14 @@
 
         <EditText
             android:id="@+id/campoCorreo"
-            android:layout_width="256dp"
-            android:layout_height="wrap_content"
+            android:layout_width="262dp"
+            android:layout_height="42dp"
             android:layout_marginLeft="-50dp"
             android:layout_marginTop="300dp"
             android:background="@drawable/borderbuttonblue"
             android:drawableLeft="@drawable/email"
             android:inputType="textEmailAddress"
-            android:textSize="30dp"
+            android:textSize="15dp"
 
             />
 
@@ -138,7 +147,6 @@
             android:backgroundTint="@color/white"
             android:fontFamily="@font/poppinsbold"
             android:text="Registrarse"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="@color/black"
             android:textSize="15dp"
             app:cornerRadius="20dp"

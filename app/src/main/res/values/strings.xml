@@ -8,4 +8,21 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="title_activity_barra_navegacion">MainActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Examen">Este examen tiene el unico objetivo de conocer si lograste entender el curso que se te ha enseñado anteriormente, ¿Estas listo para comprobar si lograste enternder?</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
+    <string name="title_activity_examencomoseutilizameetparahacerunavideollamada">
+        Examencomoseutilizameetparahacerunavideollamada
+    </string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>

@@ -12,8 +12,8 @@
     <LinearLayout
         android:layout_width="365dp"
         android:layout_height="449dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="250dp"
+        android:layout_marginLeft="80px"
+        android:layout_marginTop="500px"
         android:background="@drawable/cuadro">
 
         <ImageView

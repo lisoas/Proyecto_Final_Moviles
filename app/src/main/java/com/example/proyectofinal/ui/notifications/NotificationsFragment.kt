@@ -11,7 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.proyectofinal.R
 
 class NotificationsFragment : Fragment() {
-
+/*
     private lateinit var notificationsViewModel: NotificationsViewModel
 
     override fun onCreateView(
@@ -27,5 +27,5 @@ class NotificationsFragment : Fragment() {
             textView.text = it
         })
         return root
-    }
+    }*/
 }

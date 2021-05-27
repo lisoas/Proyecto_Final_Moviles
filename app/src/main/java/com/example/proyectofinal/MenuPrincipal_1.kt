@@ -1,41 +1,55 @@
 package com.example.proyectofinal
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
-import android.widget.ImageButton
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
+import androidx.fragment.app.Fragment
+import com.google.android.material.internal.ContextUtils.getActivity
+import kotlinx.android.synthetic.main.activity_menu_principal_1.*
+import kotlinx.android.synthetic.main.fragment_ajustes.*
 
 class MenuPrincipal_1 : AppCompatActivity() {
 
+    @SuppressLint("RestrictedApi")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_principal_1)
-        //val navView: BottomNavigationView = findViewById(R.id.nav_view)
 
-        //val navController = findNavController(R.id.nav_host_fragment)
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-        val appBarConfiguration = AppBarConfiguration(
-            setOf(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications
-            )
-        )
-        //setupActionBarWithNavController(navController, appBarConfiguration)
-        //navView.setupWithNavController(navController)
+        setCurrentFragment(principalFragment())
 
-        /*val button: ImageButton = findViewById(R.id.btnMeet) as ImageButton
-        button.setOnClickListener{
-            var intent: Intent = Intent(this, MenuPrincipalMeet::class.java)
-            startActivity(intent)
-        }*/
+        var principalfrag = principalFragment()
+        var ajusfrag = ajustesFragment()
+        var preguntasFrefrag = preguntasFrecuentesFragment()
+
+        bottomNavigationView.setOnNavigationItemReselectedListener {
+            when(it.itemId){
+                R.id.nav_principal -> {
+                    setCurrentFragment(principalfrag)
+                    true
+                }
+                R.id.nav_preguntasFrecuentes -> {
+                    setCurrentFragment(preguntasFrefrag)
+                    true
+                }
+                R.id.nav_ajustes -> {
+                    setCurrentFragment(ajusfrag)
+                    true
+
+                }
+                else -> false
+            }
+            true
+        }
 
     }
 
+    private fun setCurrentFragment(fragment: Fragment){
+        supportFragmentManager.beginTransaction().apply {
+                replace(R.id.containerView, fragment)
+                commit()
+        }
+
+    }
 
 }

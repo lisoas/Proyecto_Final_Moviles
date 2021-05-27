@@ -9,17 +9,31 @@
         android:id="@+id/navigation_home"
         android:name="com.example.proyectofinal.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/activity_menu_principal_1" />
+
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.proyectofinal.ui.dashboard.DashboardFragment"
+        android:id="@+id/pantallaprincipal"
+        android:name="com.example.proyectofinal.principalFragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_principal" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.proyectofinal.ui.notifications.NotificationsFragment"
+        android:id="@+id/pantallaajustes"
+        android:name="com.example.proyectofinal.ajustesFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_ajustes" />
+
+    <fragment
+        android:id="@+id/preguntasF"
+        android:name="com.example.proyectofinal.preguntasFrecuentesFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_preguntas_frecuentes" />
+
+    <fragment
+        android:id="@+id/perfil"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/activity_perfil" />
+
+
 </navigation>

@@ -11,7 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.proyectofinal.R
 
 class HomeFragment : Fragment() {
-
+/*
     private lateinit var homeViewModel: HomeViewModel
 
     override fun onCreateView(
@@ -27,5 +27,5 @@ class HomeFragment : Fragment() {
             textView.text = it
         })
         return root
-    }
+    }*/
 }

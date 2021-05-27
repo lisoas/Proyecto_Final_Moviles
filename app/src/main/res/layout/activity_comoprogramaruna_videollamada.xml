@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".comoprogramarunaVideollamada"
+    android:orientation="vertical"
+    android:background="@drawable/interseccion22"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <ImageButton
+        android:id="@+id/btnRegresarMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/next2"
+        android:background="@drawable/style_border_edit"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="¿Cómo programar una videollamada?"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:layout_width="411dp"
+        android:layout_height="190dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/imagen5" />
+
+        <TextView
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="5dp"
+            android:text="Programar una videollamada desde Google Calendar:"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinsbold"/>
+
+        <TextView
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="5dp"
+            android:text="En Google Calendar es muy facil programar videollamadas de Meet; solo tienes que crear un evento e invitar a usuarios. Si eres usuario de Google Workspace, se añade el enlace y el numero de acceso de la videollamada a un evento de Calendar, ya sea invitando a una o varias personas al eventoo haciendo click en 'Añadir conferencia'."
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinslight"
+            />
+
+        <TextView
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="5dp"
+            android:text="Nota: Los invitados pueden reenviar el enlace de la reunión a otros usuarios. Para que un usuario que no ha sido invitado pueda unirse al evento de Calendar, su solicitud debe ser aceptada por una persona de tu organización que participe en la reunión. En las reuniones organizadas a travéz de una cuenta personal de Google, solo puede admitir a estos participantes el creador de la reunión."
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinslight"
+            />
+        <TextView
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="15dp"
+            android:text="Los pasos que hay que seguir son estos:"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinslight"
+            />
+        <TextView
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="15dp"
+            android:text=" ◉ Crear un evento en Calendar."
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinslight"
+            />
+        <TextView
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="15dp"
+            android:text=" ◉ Haz click en Guardar."
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinslight"
+            />
+        <TextView
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="15dp"
+            android:text=" ◉ Haz click en Enviar para que los invitados reciban una notificación."
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinslight"
+            />
+
+        <TextView
+            android:layout_width="364dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Programar una videollamada desde Microsoft® Outlook®:"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="15dp"
+            android:text="Para programar una reunión con Outlook®, ve a Añadir videollamadas de Meet a Outlook."
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinslight"
+            />
+        <TextView
+            android:layout_width="364dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Programar una videollamada en otro sistema de programación: "
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="15dp"
+            android:text="Iniciar una videollamada desde Gmail o Meet."
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinslight"
+            />
+        <TextView
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="15dp"
+            android:text="Copia los detalles de una reunión en un evento creado en tu sistema de programación."
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinslight"
+            />
+
+
+        <ImageButton
+            android:id="@+id/IrExamen1"
+            android:layout_width="163dp"
+            android:layout_height="47dp"
+            android:layout_gravity="center"
+            android:background="@color/blue"
+            app:srcCompat="@drawable/iconoexamen"
+            />
+        <TextView
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/poppinslight"
+            android:text="             "
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/poppinslight"
+            android:text="             "
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+        <TextView
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/poppinslight"
+            android:text="             "
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

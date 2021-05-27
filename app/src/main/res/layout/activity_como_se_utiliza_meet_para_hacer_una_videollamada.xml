@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".comoSeUtilizaMeetParaHacerUnaVideollamada"
+    android:orientation="vertical"
+    android:id="@+id/containerMeet"
+    android:background="@drawable/interseccion22"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/volver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                app:srcCompat="@drawable/next2" />
+
+            <TextView
+                android:layout_width="371dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="¿Cómo se utiliza Meet para hacer videollamadas?"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="408dp"
+                android:layout_height="179dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-00dp"
+                android:layout_marginTop="25dp"
+                app:srcCompat="@drawable/imagen3" />
+
+            <TextView
+                android:layout_width="349dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppinslight"
+                android:text="Ve a Google Meet."
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="349dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppinslight"
+                android:text="Si quieres iniciar iniciar una reunión, haz click en Nueva reunion. Elige una opcion:"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="349dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Crear una reunión para más tarde:"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="349dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppinslight"
+                android:text="Para compartir los detalles de la reunion con los participantes de una reunión futura, copia el enlace de la reunión y compartelo con los participantes. Para iniciar la reunión directamente con este enlace pégalo en un navegador o introdúcelo 'Introduce un codigo o enlace' y luego y haz click en Unirme. "
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="349dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/poppinslight"
+                android:text="Iniciar una reunion al instante: crea una reunión y únete a la reunión diretamente."
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="349dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Programar en Google Calendar:"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="349dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppinslight"
+                android:text="Para programar una reunión, sse te dirigira a Google Calendar."
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="349dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/poppinslight"
+                android:text="Nota: Los usuarios de Google Workspace Essential no pueden programar reuniones en Google Calendar."
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="349dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/poppinslight"
+                android:text="   "
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <ImageButton
+                android:id="@+id/IrExamen1"
+                android:layout_width="163dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:background="@color/blue"
+                app:srcCompat="@drawable/iconoexamen"
+            />
+
+            <TextView
+                android:layout_width="349dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/poppinslight"
+                android:text="    "
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:layout_width="349dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/poppinslight"
+                android:text="             "
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="349dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/poppinslight"
+                android:text="             "
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+            <TextView
+                android:layout_width="349dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/poppinslight"
+                android:text="             "
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

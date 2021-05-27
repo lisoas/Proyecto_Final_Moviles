@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -14,64 +14,92 @@
         android:id="@+id/volver"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/next2"
         android:background="@null"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        />
-
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/next2"
+        tools:ignore="MissingConstraints" />
 
     <TextView
+        android:id="@+id/textView10"
         android:layout_width="258dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="35dp"
-        android:layout_marginTop="30dp"
         android:fontFamily="@font/poppinsbold"
         android:text="Preguntas sobre la aplicación"
         android:textColor="@color/white"
-        android:textSize="25dp" />
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.366"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.115"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="¿Qué o quien es ihui!?"
         android:fontFamily="@font/poppinsbold"
+        android:text="¿Qué o quien es ihui!?"
+        android:textColor="@color/black"
         android:textSize="20dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginTop="120dp"
-        android:textColor="@color/black"
-        />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.367"
+        tools:ignore="MissingConstraints" />
 
     <TextView
+        android:id="@+id/textView9"
         android:layout_width="349dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="35dp"
-        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppinslight"
         android:text="ihu! es un asistente virtual que te ayuda a conocer las herramientas que poseen Zoom, Teams y Meet."
-        android:textSize="15dp"
         android:textColor="@color/black"
-        android:fontFamily="@font/poppinslight"
-        />
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.629"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.463"
+        tools:ignore="MissingConstraints" />
+
     <TextView
         android:layout_width="349dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="35dp"
-        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppinslight"
         android:text="Fue creado para ayudar a mejorar el conocimiento sobre las plataformas de videoconferencias."
-        android:textSize="15dp"
         android:textColor="@color/black"
-        android:fontFamily="@font/poppinslight"
-        />
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.629"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.598"
+        tools:ignore="MissingConstraints" />
 
     <TextView
+        android:id="@+id/textView8"
         android:layout_width="349dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="35dp"
-        android:layout_marginTop="20dp"
-        android:text="ihu! es tu guia y maestro que te resolvera tus dudas."
-        android:textSize="15dp"
-        android:textColor="@color/black"
         android:fontFamily="@font/poppinslight"
-        />
+        android:text="ihu! es tu guia y maestro que te resolvera tus dudas."
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.629"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.703"
+        tools:ignore="MissingConstraints" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

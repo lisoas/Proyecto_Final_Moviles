@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Examen1"
+    android:background="@drawable/interseccion22"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/volverExamen1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                app:srcCompat="@drawable/next2" />
+
+            <TextView
+                android:layout_width="371dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text=" Examen de Meet ¿Cómo se utiliza Meet para hacer videollamadas?"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="408dp"
+                android:layout_height="179dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-00dp"
+                android:layout_marginTop="25dp"
+                app:srcCompat="@drawable/videoconferenciaspremium" />
+
+
+            <TextView
+                android:layout_width="349dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="¿A que opción que te muestra la imagen debes de darle clic para hacer la reunión?"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <Button
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/poppinsbold"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="A) Reunion nueva"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <Button
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/poppinsbold"
+                android:text="B) Ingresa un codigo o vinculo"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="-48dp"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="349dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="¿Cúal servicio de calendario puedes utilizar para programar una reunión?"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <Button
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/poppinsbold"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="A) Google Calendar"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <Button
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/poppinsbold"
+                android:text="B) Outlook"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="-48dp"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:layout_width="384dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-00dp"
+                android:layout_marginTop="25dp"
+                app:srcCompat="@drawable/linksmeet" />
+
+            <TextView
+                android:layout_width="349dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="¿Qué enlace de las imagenes es correcta para ingresar a una reunion en Meet?"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <Button
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/poppinsbold"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="A) La primera"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <Button
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/poppinsbold"
+                android:text="B) La segunda"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="-48dp"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="349dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="¿Los usuarios de Workspace Essencials pueden programar reuniones?"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <Button
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/poppinsbold"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="A) Si"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <Button
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/poppinsbold"
+                android:text="B) No"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="-48dp"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+
+            <TextView
+                android:layout_width="349dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/poppinslight"
+                android:text="   "
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="349dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/poppinslight"
+                android:text="    "
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="349dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/poppinslight"
+                android:text="             "
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

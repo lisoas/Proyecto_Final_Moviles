@@ -5,16 +5,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.ImageButton
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 
-class retroalimentacion : Fragment(R.layout.activity_retroalimentacion) {
-
+class Examen1 : Fragment(R.layout.activity_examen1) {
     override fun onCreate(savedInstanceState:Bundle?){
         super.onCreate(savedInstanceState)
-
 
     }
     override fun onCreateView(
@@ -22,15 +19,14 @@ class retroalimentacion : Fragment(R.layout.activity_retroalimentacion) {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        var v = inflater.inflate(R.layout.activity_retroalimentacion, container, false)
+        var v = inflater.inflate(R.layout.activity_examen1, container, false)
 
-        val bt = v.findViewById<ImageButton>(R.id.volver)
-
+        val bt = v.findViewById<ImageButton>(R.id.volverExamen1)
 
         bt.setOnClickListener{
-            val ajustesFragment = ajustesFragment()
+            val comoSeUtilizaMeetParaHacerUnaVideollamada = comoSeUtilizaMeetParaHacerUnaVideollamada()
             val transaction: FragmentTransaction = requireFragmentManager().beginTransaction()
-            transaction.replace(R.id.container, ajustesFragment)
+            transaction.replace(R.id.container, comoSeUtilizaMeetParaHacerUnaVideollamada)
             transaction.commit()
         }
 
